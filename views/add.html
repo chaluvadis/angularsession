@@ -1,0 +1,22 @@
+<div data-ng-controller="employeeController" style="margin-top:50px;">
+    <form class="form-horizontal">
+        <div class="form-group">
+            <label class="control-label col-md-2" for="empname">Employee Name :</label>
+            <div class="col-md-10">
+                <input type="text" class="form-control" id="empname" placeholder="Name" data-ng-model="emp.name" required>
+            </div>
+        </div>
+        <div class="form-group" style="margin-top:10px;">
+            <label class="control-label col-md-2" for="salary">Salary :</label>
+            <div class="col-md-10">
+                <input type="number" class="form-control" id="salary" placeholder="Salary" step="0.1" data-ng-model="emp.sal" required>
+            </div>
+        </div>
+        <div class="form-group"  style="margin-top:10px;">
+            <div class="col-sm-offset-2 col-sm-10">
+                <button type="submit" class="btn btn-primary" data-ng-click="addEmployee()">Submit</button>
+                <button type="button" class="btn btn-default" data-ng-click="cancel()">Cancel</button>
+            </div>
+        </div>
+    </form>
+</div>

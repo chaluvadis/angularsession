@@ -1,0 +1,43 @@
+<!doctype html>
+<html ng-app="myApp">
+
+<head>
+    <title>Simpel Angular Js Example</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <style>
+        nav.nav-header ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+        
+        nav.nav-header ul li {
+            float: left;
+            width: 100px;
+        }
+
+        .nav-header li a:link, .nav-header li a:visited {
+            display: block;
+            font-size: 15px;
+            padding: 5px;
+            text-decoration: none;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <navbar></navbar>
+        <ng-view></ng-view>
+    </div>
+
+    <script src="./scripts/angular.js"></script>
+    <script src="./scripts/angular-route.js"></script>
+    <script src="./scripts/jquery.js"></script>
+    <script src="./scripts/bootstrap.min.js"></script>
+    <script src="./app.js"></script>
+</body>
+
+</html>
